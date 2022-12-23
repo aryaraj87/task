@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "epaper_request",schema = "task")
+@Table(name = "epaper_request")
 public class EpaperRequest {
 
 	  @Id
