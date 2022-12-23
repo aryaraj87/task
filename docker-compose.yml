@@ -1,0 +1,33 @@
+version: '3.3'
+services:
+
+  iApp-backend:
+    image: iApp-backend:latest
+    container_name: iApp-backend
+    restart: always
+    ports:
+      - "8443:8443"
+    depends_on:
+      - my-postgres
+    links:
+      - my-postgres
+
+
+  my-postgres:
+    image: postgres:latest
+    container_name: my-postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+
+volumes:
+  postgres-data:
+    external: true
+
+
