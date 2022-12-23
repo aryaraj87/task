@@ -1,0 +1,8 @@
+com\iApp\task\common\WebConfig.class
+com\iApp\task\model\EpaperRequest$EpaperRequestBuilder.class
+com\iApp\task\TaskApplication.class
+com\iApp\task\common\PaginationConstants.class
+com\iApp\task\repository\EpaperRequestRepository.class
+com\iApp\task\contoller\IAppController.class
+com\iApp\task\model\EpaperRequest.class
+com\iApp\task\service\IAppService.class
